@@ -1,0 +1,2 @@
+# liderazgo
+Proyecto de gaspar

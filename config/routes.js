@@ -9,5 +9,7 @@
  */
 
 module.exports.routes = {
-  'GET /v1/questions': { action: 'question/find' }
+  'GET /v1/questions': { action: 'question/find' },
+  'GET /v1/answer': { action: 'answer/find' },
+  'POST /v1/answer': { action: 'answer/create' }
 };

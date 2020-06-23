@@ -9,7 +9,11 @@
  */
 
 module.exports.routes = {
+  // AuthController
+  'POST /v1/auth/token': { action: 'auth/token' },
   'GET /v1/questions': { action: 'question/find' },
+  'POST /v1/questions': { action: 'question/create' },
+  'PUT /v1/questions/:id': { action: 'question/update' },
   'GET /v1/answer': { action: 'answer/find' },
   'POST /v1/answer': { action: 'answer/create' }
 };

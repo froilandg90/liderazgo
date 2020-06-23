@@ -33,4 +33,13 @@ module.exports.bootstrap = async function() {
       { text: 'Question #1' }
     ]);
   }
+
+  const userTest = await User.count({ email: 'test@gmail.com' });
+  if (userTest === 0) {
+    await User.create({
+      email: 'test@gmail.com',
+      fullName: 'User for test',
+      password: '12345'
+    });
+  }
 };

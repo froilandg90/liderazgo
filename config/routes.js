@@ -16,5 +16,6 @@ module.exports.routes = {
   'PUT /v1/questions/:id': { action: 'question/update' },
   'GET /v1/answers': { action: 'answer/find' },
   'POST /v1/answers': { action: 'answer/create' },
-  'PUT /v1/answers/:id': { action: 'answer/update' }
+  'PUT /v1/answers/:id': { action: 'answer/update'},
+  'GET /v1/result': { action: 'formula/formula'}
 };

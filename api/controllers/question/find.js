@@ -17,7 +17,7 @@ module.exports = {
     limit: {
       type: 'number',
       description: 'Number of item per page.',
-      defaultsTo: 10,
+      defaultsTo: 100,
       isInteger: true,
       min: 4,
       max: Number.MAX_SAFE_INTEGER
